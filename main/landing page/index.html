@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasku</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <h1>Kaskus</h1>
+                </div>
+                <div class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Kelas</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                    <li class="login">
+                        <a href="#">Login</a>
+                    </li>
+                </div>
+
+                <div class="menu-items-dekstop">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Kelas</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                    <li class="login">
+                        <a href="#">
+                            Login
+                            <i class="bi bi-box-arrow-in-right"></i>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body">
+        <div class="container">
+            <section class="section satu">
+                <div class="header">
+                    <h1>Data Kas ?</h1>
+                    <h1>Di Kasku aja !</h1>
+                </div>
+                <div class="quotes">
+                    <i>'The more you learn, the more you earn.' <br>-Warren Buffet
+                    </i>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic harum eveniet exercitationem nemo
+                    repellat minima est repellendus asperiores? Ex perferendis beatae nulla fugiat commodi. Sed
+                    molestias in recusandae itaque reiciendis dicta sequi alias rerum voluptatum, iste laudantium harum
+                    cupiditate quisquam ut similique quidem praesentium repellat dignissimos aliquam corrupti vitae ex.
+                    <br> Bayar kas ? Di Kasku aja !
+                </div>
+                <div class="footer">
+                    <button type="button" class="login-btn">Log in now !</button>
+                </div>
+            </section>
+
+            <section class="section dua">
+                <div class="header">
+                    <h1>Special Fitur</h1>
+                </div>
+                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ullam dolorum!
+                    Delectus, deserunt necessitatibus obcaecati optio nisi ad perspiciatis culpa!
+                </div>
+                <div class="feature-wrap">
+                    <div class="feature-card">
+                        <div class="image"></div>
+                        <h2>Nama fitur</h2>
+                        <p>penjelasan fitur</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="image"></div>
+                        <h2>Nama fitur</h2>
+                        <p>penjelasan fitur</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="image"></div>
+                        <h2>Nama fitur</h2>
+                        <p>penjelasan fitur</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section tiga">
+                <div class="header">
+                    <h1>Kritik dan saran</h1>
+                </div>
+                <div class="content">
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" name="nama" id="nama">
+                            <label class="label" for="nama">Nama</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" id="email">
+                            <label class="label" for="email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="judul" id="judul">
+                            <label class="label" for="judul">Judul</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="pesan" id="pesan" rows="1"></textarea>
+                            <label class="label" for="pesan">Pesan</label>
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="kritik-btn">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="section empat">
+                <div class="header">
+                    <h1>Contact us</h1>
+                </div>
+                <div class="content">
+                    <h3>Hubungi kami sekarang juga</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eius odit officiis ad cum libero sed nostrum quisquam culpa cumque commodi tempore excepturi, molestiae impedit fuga voluptate fugit. Illo, quaerat.</p>
+                </div>
+                <div class="contact">
+                    <h3>Online Contact</h3>
+                    <div class="contact-wrap">
+                        <i class="bi bi-phone"></i>
+                        <span>+62 882-9988-3000</span>
+                    </div>
+                    <div class="contact-wrap">
+                        <i class="bi bi-envelope"></i>
+                        <span>kasku@gmail.com</span>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h1>Follow us</h1>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                </div>
+                <div class="footer">
+                    <div class="border"></div>
+                    <span>@ 2023 Hak Cipta - Kasku</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const navBtn = document.querySelector(".checkbox");
+        const content = document.querySelector(".body");
+        navBtn.addEventListener('change', (e) => {
+            if(e.currentTarget.checked == true) {
+                content.classList.add("blur")
+            } else{
+                content.classList.remove("blur")
+            }
+        });
+    </script>
+</body>
+
+</html>

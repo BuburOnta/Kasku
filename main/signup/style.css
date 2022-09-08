@@ -1,0 +1,128 @@
+@import url(../../font/font.css);
+
+:root {
+    font-size: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    color: #818285;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #2d2e30;
+}
+
+.center {
+    border: 3px solid #000;
+    height: 100vh;
+}
+.body {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid rgb(177, 177, 177); */
+}
+.body .container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    /* border: 2px solid #333; */
+    /* margin-top: 0px; */
+}
+
+.body .container .logo-wrap {
+    width: 60%;
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.body .container .logo-wrap img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.body .container .form {
+    font-family: inherit;
+}
+.body .container .form h3 {
+    font-weight: normal;
+}
+.body .container .form .input-group {
+    position: relative;
+    margin: 15px 0;
+}
+.body .container .form input{
+    width: 100%;
+    padding: 10px 3px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #818285;
+    font-family: inherit;
+    color: #818285;
+}
+.body .container .form label {
+    font-weight: 500;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(3px, 10px);
+    transform-origin: left;
+    transform: transform .25s;
+}
+.body .container .form .line {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    transform: scaleX(0);
+    background-color: #2d2e30;
+    transition: .5s;
+    opacity: 0;
+    transform-origin: left;
+}
+/* *ANIMATE LABEL */
+.body .container .form input:is(:focus, :valid, :not(:placeholder-shown)) + label {
+    transform: translate(3px, -50%) ;
+}
+/* *ANIMATE LINE */
+.body .container .form input:focus ~ .line{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+/* *Login BTN */
+.body .container .form .submit{
+    margin: 25px 0;
+}
+.body .container .form button[type=submit]{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-family: inherit;
+    letter-spacing: 0.2rem;
+}
+
+/* ! SECTION FOOTER */
+footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
